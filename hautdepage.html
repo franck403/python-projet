@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: red;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style> </head>
+  <body><br>
+    <div class="navbar" style="width=50%"> <a href="index.html">accueil</a>
+      <div class="navbar" style="width=50%"> <a href="index1.html">discord</a>
+        
+        <div class="navbar" style="width=50%"> <a href="index2.html">mod
+            minecraft</a><a href="index3.html">mon site</a>
+          <div class="dropdown-content" style="top: 56px; left: 110px; width: 254px; height: 134px;">
+          </div>
+          <div class="dropdown"> <button class="dropbtn">classe de recette</button>
+            <div class="dropdown-content" style="top: 66px; left: 396px; width: 254px; height: 134px;">
+              <a href="recette_de_soupe.html">soupe</a> <a href="recette_de_gateau.html">recette
+                de gateau</a> <a href="sauce.html">recette de sauce</a> </div>
+            <div class="navbar" style="width=50%"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

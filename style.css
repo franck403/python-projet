@@ -1,0 +1,91 @@
+/*
+Animated Search Form
+---------------------------------------------------------------------------------------------------- */
+ 
+.nav-primary .genesis-nav-menu > .search {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    padding: 0;
+}
+ 
+li a.icon-search:before {
+    font-family: icomoon;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    content: "\f002";font-size:18px;
+}
+ 
+li a.icon-search {
+    cursor: pointer;
+}
+ 
+/*li a.icon-search:hover {
+    border-bottom: none;
+}*/
+ 
+.search-div {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 700px;
+    /*padding: 4px;*/
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    background: #171616;
+    margin-top: -40px;
+}
+ 
+.search-div .search-form {
+    position: relative;
+}
+ 
+.search-div .search-form input[type="search"] {
+    width: 100%;
+padding: 10px;
+font-size: 16px;
+background-color:
+#f2f2f2;
+border: 1px solid #fd043c;
+}
+ 
+.search-div .search-form input[type="submit"] {
+    position: absolute;
+    right: 2px;
+    bottom: 1px;
+    padding: 10px 13px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+ 
+/* Clear search field placeholder text on focus */
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+} /* Firefox 18- */
+input:focus::-moz-placeholder {
+    color: transparent;
+} /* Firefox 19+ */
+input:focus:-ms-input-placeholder {
+    color: transparent;
+} /* oldIE ;) */
+ 
+@media only screen and (max-width: 960px) {
+    .nav-primary .genesis-nav-menu > .search {
+        display: block;
+        text-align: left;
+    }
+    .search-div {
+        left: 0;width:auto;
+    }
+}
+ 
+@media only screen and (max-width: 340px) {
+    .search-div {
+        width: auto;
+    }
+}

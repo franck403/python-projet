@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>lien</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous">
+
+		</script>
+    <script> 
+
+    $(function(){
+
+      $("#hautdepage").load("hautdepage.html"); 
+
+      $("#basdepage").load("basdepage.html"); 
+
+    });
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+</script>
+  <body>
+    <div id="hautdepage"></div>
+    <h1 class="accueil"> Bienvenu dans le site de lien utile et bien plus </h1>
+    <p class="accueil">site non disponible pour maitenece de sécurité merci de cliqué sur le bouton en bas de ce message sauf si tu est déja sur mon site /merci de votre comprénsion</p>
+<button onclick="sitealert()">alert urgente</button> 
+<script> function sitealert() 
+{alert("a cause de code non sécuritaire du html vous devez allez sur mon autre site ");
+
+if (window.confirm('mon site sécuritare et marche très bien')) 
+{
+window.location.href='https://sites.google.com/view/virusvirus04/accueil ';
+};
+  
+
+}
+</script>
+
+
+
+<div id="basdepage" style="position: fixed; botton: 0;"></div>
+  </body>
+</html>
